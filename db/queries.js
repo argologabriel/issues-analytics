@@ -6,6 +6,7 @@ async function createTable() {
     CREATE TABLE IF NOT EXISTS issues (
         id SERIAL PRIMARY KEY,
         id_issue INT NOT NULL UNIQUE,
+        titulo TEXT,
         data_abertura TIMESTAMP NOT NULL,
         data_conclusao TIMESTAMP,
         tempo_de_resolucao_em_dias INT,
@@ -31,6 +32,7 @@ async function saveIssuesToDb(issues) {
   const query = `
     INSERT INTO issues (
       id_issue,
+      titulo,
       data_abertura,
       data_conclusao,
       tempo_de_resolucao_em_dias,
@@ -39,7 +41,7 @@ async function saveIssuesToDb(issues) {
       usuario_autor,
       usuario_atribuido_para_resolver
     )
-    VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+    VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
     ON CONFLICT (id_issue) DO NOTHING;
   `;
 
@@ -52,6 +54,7 @@ async function saveIssuesToDb(issues) {
 
       await client.query(query, [
         issue.number,
+        issue.title,
         issue.created_at,
         issue.closed_at || null,
         tempoResolucao,
