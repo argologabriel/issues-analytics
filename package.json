@@ -7,5 +7,9 @@
   },
   "author": "Gabriel Argôlo e Davi Correa",
   "license": "ISC",
-  "description": "O objetivo do projeto é fazer uma análise das issues do Bootstrap e classificá-las em uma das seguintes características: I - Arquitetura de Software, II - Padrões e Estilos Arquiteturais ou III - Padrões de Projeto."
+  "description": "O objetivo do projeto é fazer uma análise das issues do Bootstrap e classificá-las em uma das seguintes características: I - Arquitetura de Software, II - Padrões e Estilos Arquiteturais ou III - Padrões de Projeto.",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "pg": "^8.13.1"
+  }
 }
