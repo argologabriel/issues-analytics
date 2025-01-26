@@ -13,7 +13,6 @@ async function createTable() {
         milestone TEXT,
         usuario_autor TEXT,
         usuario_atribuido_para_resolver TEXT,
-        descricao TEXT,
         tema_relacionado TEXT
     );
   `;
@@ -38,10 +37,9 @@ async function saveIssuesToDb(issues) {
       prioridade,
       milestone,
       usuario_autor,
-      usuario_atribuido_para_resolver,
-      descricao
+      usuario_atribuido_para_resolver
     )
-    VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+    VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
     ON CONFLICT (id_issue) DO NOTHING;
   `;
 
@@ -61,7 +59,6 @@ async function saveIssuesToDb(issues) {
         issue.milestone?.title || null,
         issue.user?.login || null,
         issue.assignee?.login || null,
-        issue.body || null, // Descrição da issue
       ]);
     }
     console.log("Issues salvas no banco de dados com sucesso!");
