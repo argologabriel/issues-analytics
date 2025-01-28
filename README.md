@@ -1,4 +1,4 @@
-# Relatório do Projeto (Extrair issues do repositório do Bootstrap)
+# **Issues Analytics**
 
 ## **Introdução**
 
@@ -94,7 +94,7 @@ Banco de dados relacional usado para armazenar as issues coletadas.
 
 ### **3. API do GitHub**
 
-<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="100">
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="80">
 
 A API foi utilizada para buscar as issues de repositórios específicos. As chamadas são paginadas para lidar com grandes volumes de dados (100 issues por requisição).
 
