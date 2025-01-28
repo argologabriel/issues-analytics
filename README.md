@@ -36,8 +36,8 @@ Além de armazenar todas as informações em um banco de dados.
     DB_HOST=localhost
     DB_PORT=5432
     DB_NAME=seu_banco_de_dados
-    DB_USER=seu_user_do_postgress
-    DB_PASSWORD=sua_senha_do_postgree
+    DB_USER=seu_user_do_postgresql
+    DB_PASSWORD=sua_senha_postgresql
    ```
 
 2. Na raiz do projeto execute o comando a seguir e instale as dependências necessárias:
@@ -49,13 +49,13 @@ Além de armazenar todas as informações em um banco de dados.
 3. Para rodar a coleta das issues, execute o comando a seguir:
 
    ```bash
-   npm collector
+   npm run collector
    ```
 
 4. Para rodar a classificação das issues, execute o comando a seguir:
 
    ```bash
-   npm classifier
+   npm run classifier
    ```
 
 ## **Etapas do Projeto**
@@ -118,7 +118,7 @@ Gerenciador de variáveis de ambiente para armazenar chaves sensíveis, como:
 
 - Token do GitHub.
 - Chave da API da OpenAI.
-- Informações de conexão com o Postgress.
+- Informações de conexão com o PostgreSQL.
 
 ## **Lógica Implementada**
 
