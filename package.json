@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "collector": "node ./issues_collector/main.js",
+    "classifier": "node ./issues_classifier/main.js"
   },
   "author": "Gabriel Argôlo e Davi Correa",
   "license": "ISC",
