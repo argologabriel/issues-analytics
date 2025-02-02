@@ -15,8 +15,6 @@ Projeto realizado como parte da disciplina de Engenharia de Software II. Nele, f
 
 Além de armazenar todas as informações em um banco de dados.
 
----
-
 ## **Como Rodar o Projeto**
 
 1. Crie um arquivo `.env` na raiz do projeto backend com as seguintes variáveis:
@@ -142,3 +140,17 @@ No arquivo `db/queries.js`:
 No arquivo `issues_classifier/main.js`:
 
 - Implementamos a função `obterTemaRelacionado` e `atualizarTemaRelacionado`, que utiliza a API da OpenAI através de um prompt para classificar os temas relacionados usando o título como base e salvar estes temas no banco de dados.
+
+## **Resultados do Projeto Bootstrap**
+
+### **Tabela das Issues**
+
+<img src="./docs/bootstrap_issues_table.png" alt="Tabela das Issues" width="1000">
+
+### **Gráficos de Classificação das Issues**
+
+<img src="./docs/bootstrap_issues_pizza.png" alt="Tabela das Issues" width="1000">
+
+<hr>
+
+<img src="./docs/bootstrap_issues_bar.png" alt="Tabela das Issues" width="1000">
