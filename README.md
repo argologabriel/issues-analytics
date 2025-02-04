@@ -100,7 +100,23 @@ A API foi utilizada para buscar as issues de repositórios específicos. As cham
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/OpenAI_Logo_%282%29.svg" alt="OpenAI Logo" width="100">
 
-Foi usada para classificar os títulos das issues.
+<ul>
+   <li><b>Modelo:</b> gpt-3.5-turbo</li>
+
+   <br>
+
+   <li><b>Contexto:</b> Segue um contexto dos temas relacionados para que você use como base na hora de classificar uma issue pelo seu titulo:
+   
+   Arquitetura de software: Refere-se à estrutura fundamental de um sistema, incluindo os componentes principais, suas interações e os padrões utilizados para projetar e organizar o sistema.
+   
+   Padrões e Estilos Arquiteturais: Refere-se aos estilos ou padrões gerais que são usados para organizar e estruturar sistemas de software, como arquitetura em camadas, microservices, MVC, etc.
+   
+   Padrões de Projeto: Refere-se às soluções reutilizáveis para problemas comuns de design em sistemas de software. Exemplos incluem padrões como Singleton, Factory, Observer, Strategy, entre outros.</li>
+
+   <li><b>Prompt:</b> Com base no seguinte titulo e no contexto passado, atribua um tema relacionado:
+	
+   Analise o título a seguir e insira (1) se refere à Arquitetura de Software, (2) se se refere à Padrões e Estilos Arquiteturais, (3) se se refere à Padrões de Projeto e (4) se não se refere às uma das opções anteriores. Escreva apenas os números</li>
+</ul>
 
 ### **5. Biblioteca Axios**
 
