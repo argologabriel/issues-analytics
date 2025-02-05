@@ -159,6 +159,52 @@ No arquivo `issues_classifier/main.js`:
 
 ## **Resultados do Projeto Bootstrap**
 
+### **Principais Conclusões**
+
+Durante a análise das issues dos repositórios do Bootstrap, buscamos compreender como esses registros se relacionam com os temas de **Arquitetura de Software, Padrões e Estilos Arquiteturais e Padrões de Projeto**. A partir da observação das **labels, milestones e atribuições**, identificamos alguns pontos que indicam aspectos da organização do projeto, tanto em suas forças quanto em suas limitações.
+
+#### **Fatores que indicam uma menor organização em comparação a outros projetos open source:**
+
+1.  **Pouco aproveitamento das labels cadastradas**
+    
+    *   As labels são ferramentas fundamentais para categorizar e organizar issues, permitindo uma melhor triagem e priorização. No entanto, no repositório analisado, percebe-se que as labels cadastradas não são utilizadas de forma consistente. Isso dificulta a identificação rápida do tipo de problema abordado em cada issue e pode impactar a eficiência na gestão do projeto.
+        
+2.  **Pouca utilização das atribuições de um usuário a determinada issue**
+    
+    *   A atribuição de issues a colaboradores é uma prática comum em projetos open source bem estruturados, pois facilita a gestão de responsabilidades e melhora a previsibilidade da resolução das tarefas. No Bootstrap, observamos que esse recurso não é amplamente utilizado, o que pode levar a uma menor clareza sobre quem está encarregado de resolver cada issue, impactando potencialmente o tempo de resposta e resolução.
+        
+3.  **Nenhum uso de milestones**
+    
+    *   O uso de milestones é uma prática recomendada para acompanhar o progresso de grandes entregas e manter a organização do roadmap do projeto. No repositório analisado, notamos que não há milestones associadas às issues, o que pode indicar uma falta de planejamento explícito em termos de entregáveis ou um fluxo de trabalho menos estruturado.
+        
+4.  **Bodies das issues pouco descritivas**
+    
+    *   Uma descrição detalhada das issues é essencial para facilitar a colaboração entre desenvolvedores, garantindo que todos compreendam claramente o problema ou a sugestão apresentada. No Bootstrap, notamos que muitas issues contêm bodies pouco descritivas, tornando mais difícil entender o contexto sem uma análise mais aprofundada dos comentários ou do código relacionado. Isso pode afetar negativamente a eficiência na resolução de problemas.
+        
+
+#### **Pontos positivos identificados:**
+
+1.  **Títulos bem intuitivos**
+    
+    *   Apesar das limitações apontadas, um ponto positivo observado é que os títulos das issues são geralmente bem intuitivos e informativos. Isso facilita a identificação rápida do assunto abordado, permitindo que os colaboradores entendam de forma resumida o que cada issue trata antes de precisar aprofundar-se no seu conteúdo.
+        
+
+#### **Implicações dessa análise**
+
+A partir dessa avaliação, percebemos que, embora o projeto Bootstrap seja amplamente utilizado e possua um grande número de contribuidores, ele não segue algumas das melhores práticas de organização encontradas em outros projetos open source. Isso pode impactar a eficiência na gestão das issues, dificultando a colaboração e possivelmente aumentando o tempo necessário para resolver problemas ou implementar melhorias.
+
+A falta de um uso consistente de labels, milestones e atribuições pode indicar que o fluxo de trabalho das issues é menos estruturado e mais dependente da comunicação informal entre os mantenedores e contribuidores do projeto. Por outro lado, a clareza dos títulos pode compensar parcialmente essa falta de organização, tornando a identificação inicial das issues mais acessível.
+
+Com base nesses achados, projetos que desejam melhorar sua organização podem se beneficiar de práticas como:
+
+*   Uso consistente de labels para classificar as issues.
+    
+*   Atribuição de responsáveis para melhorar a rastreabilidade.
+    
+*   Implementação de milestones para estruturar entregas futuras.
+    
+*   Melhor elaboração das descrições das issues para facilitar a colaboração.
+
 ### **Tabela das Issues**
 
 <img src="./docs/bootstrap_issues_table.png" alt="Tabela das Issues" width="1000">
